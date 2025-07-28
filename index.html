@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>institution Faneva Ankadindramamy</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .gradient-bg {
+                background: linear-gradient(135deg, #472110 0%, #472110 100%);
+            }
+        }
+
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+ 
+
+<!-- Barre de navigation -->
+    <nav class="bg-white shadow-md py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+              
+                    <img src="img/logo-removebg-preview.png" alt="" srcset="" style="width:10%;height:10%;">
+                
+                <span class="ml-3 text-xl font-bold text-gray-900">Faneva</span>
+            </div>
+
+            <!-- Navigation desktop -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors">Accueil</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors">A propos</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors">Filières</a>
+                <a href="#" class="text-gray-600 hover:text-primary font-medium transition-colors">Contact</a>
+            </div>
+
+            <!-- Bouton login desktop -->
+            <div class="hidden md:block">
+                <button class="bg-orange-800 hover:bg-amber-500 text-white font-medium py-2 px-6 rounded-lg transform hover:-translate-y-1 transition duration-300">
+                    Nous contacter
+                </button>
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu mobile déroulant -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 px-4 pt-2 pb-4 bg-white rounded-lg shadow-lg">
+            <a href="#" class="block py-3 text-gray-700 hover:text-primary font-medium border-b border-gray-100">Features</a>
+            <a href="#" class="block py-3 text-gray-700 hover:text-primary font-medium border-b border-gray-100">Marketplace</a>
+            <a href="#" class="block py-3 text-gray-700 hover:text-primary font-medium border-b border-gray-100">Company</a>
+            <button class="mt-3 w-full bg-primary text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Login
+            </button>
+        </div>
+    </nav>
+    
+
+    <!-- Header with Hero Section -->
+<header class="text-white relative overflow-hidden" style="background-image: url('img/fan1.jpg'); background-size: cover; background-position: center;">
+     <!-- Fond bleu transparent (rgba(0, 0, 128, 0.5) → bleu foncé à 50% d'opacité -->
+    <div class="absolute inset-0 bg-black-400/90 z-0"></div>
+    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+        <div class="max-w-3xl mx-auto text-center animate__animated animate__fadeIn">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow">INSTITUTION FANEVA ANKADINDRAMAMY</h1>
+            <p class="text-xl md:text-2xl mb-8">Enseignement Général et Technique</p>
+           <button class="h-12 w-40  bg-orange-800 text-white shadow-2xl hover:bg-amber-500 hover:text-red-900 rounded-lg transform hover:-translate-y-1 transition duration-300">
+                    <span>Nous Contacter</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                    <div class="text-primary mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Formations Professionnelles</h3>
+                    <p class="text-gray-600">Des programmes adaptés aux besoins du marché du travail.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="text-primary mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Enseignants Qualifiés</h3>
+                    <p class="text-gray-600">Un corps professoral expérimenté et dévoué.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="text-primary mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Infrastructures Modernes</h3>
+                    <p class="text-gray-600">Des équipements à la pointe de la technologie.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="text-primary mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Certifications</h3>
+                    <p class="text-gray-600">Des diplômes reconnus par l'État et les professionnels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10 animate__animated animate__fadeInLeft">
+                    <h2 class="text-3xl md:text-4xl font-bold text-orange-800 mb-6">BIENVENUE À FANEVA ANKADINDRAMAMY</h2>
+                    <p class="text-lg mb-4">Notre institution s'engage à fournir une éducation de qualité dans divers domaines professionnels. Nous combinons théorie et pratique pour préparer nos étudiants aux défis du monde professionnel.</p>
+                    <p class="text-lg">Nos programmes sont conçus pour répondre aux besoins spécifiques des secteurs clés de notre économie.</p>
+                </div>
+                <div class="lg:w-1/2 animate__animated animate__fadeInRight">
+                    <div class="relative">
+                        <img src="img/eee.jpg" alt="Étudiants en cours" class="rounded-xl shadow-xl w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-orange-800 text-white p-6 rounded-xl shadow-lg animate-float">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-orange-800 mb-16">NOS FILIÈRES PRINCIPALES</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gestion -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Gestion" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 " style="color: #7E491E;">Gestion</h3>
+                        <p class="text-dark-600 mb-4">Formation en comptabilité, management et administration des entreprises.</p>
+                        <a href="voirplus.html" class="font-semibold flex items-center"style="color: #7E491E;">
+                            En savoir plus
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mécanique -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="img/mecanique.jpg" alt="Mécanique" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 " style="color: #7E491E;">Mécanique</h3>
+            
+                        <p class="text-dark-600 mb-4">Apprentissage des techniques de maintenance et mécanique automobile.</p>
+                        <a href="mecanique.html" class="font-semibold flex items-center"style="color:#7E491E;">
+                            En savoir plus
+                            <svg xmlns="" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Électronique -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="img/electronique.jpg" alt="Électronique" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 "style="color: #7E491E;">Électronique</h3>
+                        <p class="text-dark-600 mb-4">Formation en électricité, électronique et automatisme industriel.</p>
+                        <a href="#" class="font-semibold flex items-center"style="color: #7E491E;">
+                            En savoir plus
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- BTP -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="BTP" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 "style="color: #7E491E;">BTP</h3>
+                        <p class="text-dark-600 mb-4">Techniques de construction, génie civil et travaux publics.</p>
+                        <a href="#" class=" font-semibold flex items-center"style="color: #7E491E;">
+                            En savoir plus
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enseignement Général -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Enseignement Général" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 "style="color: #7E491E;">Enseignement Général</h3>
+                        <p class="text-dark-600 mb-4">Programmes scolaires classiques préparant aux études supérieures.</p>
+                        <a href="#" class="font-semibold flex items-center"style="color: #7E491E;">
+                            En savoir plus
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Autre filière optionnelle -->
+                <div class=" rounded-xl overflow-hidden shadow-lg " style="background-color:#7E491E; color:white;">
+                    <div class="h-full flex flex-col justify-center items-center p-8 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        <h3 class="text-xl font-bold mb-3">Découvrez toutes nos formations</h3>
+                        <p class="mb-6">Contactez-nous pour plus d'informations sur nos programmes éducatifs.</p>
+                        <button id="contactNavBtn2" class="hover:text-gray-300 transition duration-300">Contact</button>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+<div class="hero-gradient text-white py-2 px-4">
+     <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:px-6 lg:px-8">
+            <!-- Image centrée avec des classes Tailwind -->
+            <div class="flex justify-center mb-8">
+                
+                    <img 
+                        src="img/logo-removebg-preview.png" 
+                        alt="Application Logo" 
+                        class="logo-img w-60 h-60 object-contain mx-auto"
+                    >
+                
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-6">
+                Institution Faneva Ankadindramamy
+            </h1>
+            
+            <p class="text-dark mb-10 max-w-2xl mx-auto text-lg">
+                Fière de plus de 50 années d'experience dans l'éducation.<br>
+                Rejoinez nous pour la prochaine rentrée!
+            </p>
+            <button class="bg-orange-800 text-white hover:bg-orange-800 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:-translate-y-1 transition duration-300">
+                Nous contacter <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Section Footer -->
+    <div class="bg-gray-900 text-white py-16 px-4" style="background-color: black;">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid-table mb-16">
+                <!-- Colonne Solutions -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4" style="color:#FD9803">Contact</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-300 block">📍 Lot 123B,Antananarivo</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">📞 +261 34 15 451 27</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">📩 institutionfaneva@gmail.com</a></li>
+
+                </div>
+                
+                <!-- Colonne Support -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 " style="color:#FD9803">Mentions légales</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-300 block">🔗 Mentions légales</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">🔗 Politique de confidentialité</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <!-- Colonne Company -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 " style="color:#FD9803;">Institut</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-300 block">A propos </a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">Filière</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">Contact</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Colonne Legal -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4" style="color: #FD9803;">Réseaux sociaux officiels</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link text-gray-300 block">🔗 Facebook officiel</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block"> 🔗 Twitter</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 block">🔗 LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Ligne de copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                  Copyright © 2025 Site institution Faneva Ankadindramamy. <br>
+                Création de site web responsive par <br>
+                <a href="https://portfolio-fy.com" target="_blank">Fy Rakotoarimanana</a> (UI) &
+                <a href="https://portfolio-mbinintsoa.com" target="_blank">Mbinintsoa Rakotoarimanana</a> (Développeur web).
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

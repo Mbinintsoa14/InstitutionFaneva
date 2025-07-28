@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filière Mécanique - Institution Faneva Ankadindramamy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5c4033',
+                        secondary: '#d4c8b8',
+                        light: '#f8f4ef',
+                        dark: '#472110',
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        body: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f4ef;
+            color: #5c4033;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(92, 64, 51, 0.8), rgba(92, 64, 51, 0.8)), url('https://images.unsplash.com/photo-1581093450021-4a7360e9a6f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .section-divider {
+            border-top: 2px dashed #d4c8b8;
+            margin: 3rem 0;
+        }
+        
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(92, 64, 51, 0.15);
+        }
+        
+        .btn-primary {
+            background-color: #5c4033;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #472110;
+            transform: translateY(-2px);
+        }
+        
+        .feature-icon {
+            background-color: #f8f4ef;
+            color: #5c4033;
+            border: 2px solid #d4c8b8;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #d4c8b8;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #5c4033;
+            border: 3px solid #f8f4ef;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Header -->
+    <header class="bg-primary text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold">
+                    <span class="text-white">LOGO</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-secondary transition">Accueil</a>
+                <a href="#" class="hover:text-secondary transition">À propos</a>
+                <a href="#" class="hover:text-secondary transition">Nos filières</a>
+                <a href="#" class="hover:text-secondary transition">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <span class="bg-[#f8d3a9] text-primary px-4 py-1 rounded-full text-sm font-medium">Filière Mécanique</span>
+                <h1 class="text-4xl md:text-5xl font-bold mt-6 mb-4">Formation en Mécanique Automobile</h1>
+                <p class="text-xl opacity-90 mb-8">Acquérez l'expertise technique pour maîtriser les systèmes mécaniques modernes</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#programme" class="btn-primary px-8 py-3 rounded-full font-medium inline-block">Découvrir le programme</a>
+                    <a href="#contact" class="bg-white text-primary px-8 py-3 rounded-full font-medium hover:bg-secondary transition inline-block">S'inscrire maintenant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4 text-sm text-primary">
+        <a href="#" class="hover:underline">Accueil</a> > 
+        <a href="#" class="hover:underline">Nos filières</a> > 
+        <span class="font-medium">Mécanique</span>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Formation en mécanique" 
+                         class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">À propos de notre filière Mécanique</h2>
+                    <p class="mb-4 text-lg">
+                        Notre filière Mécanique offre une formation complète en maintenance automobile et mécanique industrielle. 
+                        Ce programme intensif forme des techniciens capables d'intervenir sur tous les systèmes mécaniques modernes.
+                    </p>
+                    <p class="mb-6 text-lg">
+                        Grâce à des ateliers équipés des dernières technologies et à des enseignants experts, nos étudiants développent 
+                        des compétences pratiques immédiatement applicables dans le monde professionnel.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <span>Ateliers modernes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <span>Véhicules récents</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <span>Experts industriels</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <span>Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programme Section -->
+    <section id="programme" class="py-16 bg-[#faf7f2]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Programme de formation</h2>
+                <p class="max-w-2xl mx-auto text-lg">Un cursus technique sur 3 ans, axé sur la pratique et la maîtrise des systèmes mécaniques</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Année 1 -->
+                <div class="card bg-white overflow-hidden">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Première année</h3>
+                        <p>Fondamentaux techniques</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Mécanique générale</h4>
+                                <p>Principes fondamentaux</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Électricité automobile</h4>
+                                <p>Circuits et systèmes électriques</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Lecture de plans</h4>
+                                <p>Schémas techniques</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Métrologie</h4>
+                                <p>Techniques de mesure</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Sécurité au travail</h4>
+                                <p>Protocoles et EPI</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Année 2 -->
+                <div class="card bg-white overflow-hidden">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Deuxième année</h3>
+                        <p>Systèmes automobiles</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Moteurs thermiques</h4>
+                                <p>Diagnostic et réparation</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Transmissions</h4>
+                                <p>Boîtes de vitesses et ponts</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Systèmes de freinage</h4>
+                                <p>Technologies ABS/ESP</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Suspensions</h4>
+                                <p>Géométrie et réglages</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Climatisation</h4>
+                                <p>Maintenance et recharge</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Année 3 -->
+                <div class="card bg-white overflow-hidden">
+                    <div class="bg-primary text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Troisième année</h3>
+                        <p>Expertise et nouvelles technologies</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Diagnostic électronique</h4>
+                                <p>Outils OBD et logiciels</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Hybrides et électriques</h4>
+                                <p>Technologies vertes</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Gestion d'atelier</h4>
+                                <p>Organisation et planning</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Relation client</h4>
+                                <p>Accueil et conseil</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Stage en entreprise</h4>
+                                <p>Immersion professionnelle</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Débouchés professionnels</h2>
+                <p class="max-w-2xl mx-auto text-lg">Nos techniciens en mécanique sont recherchés dans tous les secteurs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wrench text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mécanicien automobile</h3>
+                    <p>Maintenance et réparation de véhicules</p>
+                </div>
+                
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-car-crash text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Expert en carrosserie</h3>
+                    <p>Réparation de véhicules accidentés</p>
+                </div>
+                
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microchip text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Diagnostiqueur</h3>
+                    <p>Détection et résolution de pannes</p>
+                </div>
+                
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hard-hat text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chef d'atelier</h3>
+                    <p>Encadrement d'équipe technique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Section -->
+    <section class="py-16 bg-[#faf7f2]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Nos ateliers équipés</h2>
+                <p class="max-w-2xl mx-auto text-lg">Apprenez avec les dernières technologies dans un environnement professionnel</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543852782-9b6d1c8c3c3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Atelier mécanique" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Atelier moteurs</h3>
+                        <p class="mb-4">Bancs d'essai, outils de diagnostic, moteurs pédagogiques sectionnés</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Moteurs thermiques</span>
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Hybrides</span>
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">Électriques</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1563720223880-0a7a3d78d377?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Atelier électronique" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Laboratoire électronique</h3>
+                        <p class="mb-4">Postes de diagnostic, simulateurs de pannes, outils de programmation</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">OBD</span>
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">ECU</span>
+                            <span class="bg-secondary text-primary px-3 py-1 rounded-full text-sm">ADAS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à devenir un expert en mécanique ?</h2>
+                <p class="text-xl mb-10">Rejoignez notre formation pour la prochaine rentrée</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-[#f8d3a9] text-primary font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:bg-[#f5c28a] inline-block">
+                        Visiter nos ateliers
+                    </a>
+                    <a href="#" class="bg-white text-primary font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:bg-gray-100 inline-block">
+                        S'inscrire maintenant
+                    </a>
+                </div>
+                <p class="mt-8 text-secondary">Contactez-nous au +261 34 00 000 00 pour plus d'informations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Institution Faneva Ankadindramamy</h3>
+                    <p>Excellence technique depuis 2019. Formation professionnelle de qualité.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition-colors">Accueil</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Formations</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Admissions</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Nos filières</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition-colors">Gestion</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Mécanique</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">Électronique</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-colors">BTP</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p class="mb-2">Lot II J 101 Bis Ankadindramamy</p>
+                        <p class="mb-2">Téléphone: +261 XX XX XXX XX</p>
+                        <p class="mb-2">Email: contact@faneva-ankadindramamy.edu</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-primary mt-12 pt-8 text-center">
+                <p>&copy; 2023 Institution Faneva Ankadindramamy - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            if (nav.classList.contains('hidden')) {
+                nav.classList.remove('hidden');
+                nav.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-primary', 'p-4', 'rounded-lg', 'shadow-lg');
+            } else {
+                nav.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

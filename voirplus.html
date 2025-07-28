@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filière Gestion - Institution Faneva Ankadindramamy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f4ef;
+            color: #5c4033;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(92, 64, 51, 0.8), rgba(92, 64, 51, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .section-divider {
+            border-top: 2px dashed #d4c8b8;
+            margin: 3rem 0;
+        }
+        
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(92, 64, 51, 0.15);
+        }
+        
+        .btn-primary {
+            background-color: #5c4033;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #472110;
+            transform: translateY(-2px);
+        }
+        
+        .feature-icon {
+            background-color: #f8f4ef;
+            color: #5c4033;
+            border: 2px solid #d4c8b8;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #d4c8b8;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #5c4033;
+            border: 3px solid #f8f4ef;
+        }
+    </style>
+</head>
+<body class="bg-beige-50">
+    <!-- Header -->
+    <header class="bg-[#5c4033] text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold">
+                    <span class="text-white">LOGO</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-beige-200 transition">Accueil</a>
+                <a href="#" class="hover:text-beige-200 transition">À propos</a>
+                <a href="#" class="hover:text-beige-200 transition">Nos filières</a>
+                <a href="#" class="hover:text-beige-200 transition">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <span class="bg-[#f8d3a9] text-[#5c4033] px-4 py-1 rounded-full text-sm font-medium">Filière Gestion</span>
+                <h1 class="text-4xl md:text-5xl font-bold mt-6 mb-4">Formation en Gestion & Administration</h1>
+                <p class="text-xl opacity-90 mb-8">Acquérez les compétences essentielles pour réussir dans le monde des affaires</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#programme" class="btn-primary px-8 py-3 rounded-full font-medium inline-block">Découvrir le programme</a>
+                    <a href="#contact" class="bg-white text-[#5c4033] px-8 py-3 rounded-full font-medium hover:bg-beige-100 transition inline-block">S'inscrire maintenant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4 text-sm text-[#5c4033]">
+        <a href="#" class="hover:underline">Accueil</a> > 
+        <a href="#" class="hover:underline">Nos filières</a> > 
+        <span class="font-medium">Gestion</span>
+    </div>
+
+    <!-- Overview Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Formation en gestion" 
+                         class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">À propos de notre filière Gestion</h2>
+                    <p class="mb-4 text-lg">
+                        Notre filière Gestion offre une formation complète en comptabilité, management et administration des entreprises. 
+                        Ce programme est conçu pour répondre aux besoins actuels du marché du travail et préparer nos étudiants aux défis 
+                        du monde professionnel.
+                    </p>
+                    <p class="mb-6 text-lg">
+                        Avec un équilibre entre théorie et pratique, nos étudiants acquièrent non seulement des connaissances académiques 
+                        solides mais aussi des compétences pratiques directement applicables en entreprise.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <span>Diplôme reconnu</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <span>Stages en entreprise</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <span>Enseignants experts</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <span>Matériel moderne</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programme Section -->
+    <section id="programme" class="py-16 bg-[#faf7f2]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Programme de formation</h2>
+                <p class="max-w-2xl mx-auto text-lg">Un cursus complet sur 3 ans, alliant connaissances théoriques et compétences pratiques</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Année 1 -->
+                <div class="card bg-white overflow-hidden">
+                    <div class="bg-[#5c4033] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Première année</h3>
+                        <p>Fondamentaux de la gestion</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Comptabilité générale</h4>
+                                <p>Principes fondamentaux et techniques</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Économie d'entreprise</h4>
+                                <p>Fonctionnement des organisations</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Droit des affaires</h4>
+                                <p>Cadre juridique des entreprises</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Mathématiques financières</h4>
+                                <p>Calculs financiers de base</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Informatique bureautique</h4>
+                                <p>Maîtrise des outils professionnels</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Année 2 -->
+                <div class="card bg-white overflow-hidden">
+                    <div class="bg-[#5c4033] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Deuxième année</h3>
+                        <p>Spécialisation approfondie</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Comptabilité analytique</h4>
+                                <p>Analyse des coûts et rentabilité</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Gestion financière</h4>
+                                <p>Optimisation des ressources financières</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Marketing stratégique</h4>
+                                <p>Stratégies de marché et positionnement</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Management des RH</h4>
+                                <p>Gestion du capital humain</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Fiscalité des entreprises</h4>
+                                <p>Cadre fiscal et optimisation</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Année 3 -->
+                <div class="card bg-white overflow-hidden">
+                    <div class="bg-[#5c4033] text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Troisième année</h3>
+                        <p>Expertise professionnelle</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Audit et contrôle</h4>
+                                <p>Diagnostic et amélioration des processus</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Stratégie d'entreprise</h4>
+                                <p>Planification à long terme</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Gestion de projet</h4>
+                                <p>Méthodologies et outils</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Business intelligence</h4>
+                                <p>Analyse de données décisionnelles</p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="font-bold">Stage professionnel</h4>
+                                <p>Application en milieu réel (3 mois)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Opportunities -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Débouchés professionnels</h2>
+                <p class="max-w-2xl mx-auto text-lg">Nos diplômés en gestion évoluent dans divers secteurs d'activité</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calculator text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Comptable</h3>
+                    <p>Gestion des comptes, bilan, déclarations fiscales</p>
+                </div>
+                
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Analyste financier</h3>
+                    <p>Analyse des performances et conseils d'investissement</p>
+                </div>
+                
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Responsable RH</h3>
+                    <p>Gestion du personnel, recrutement, formation</p>
+                </div>
+                
+                <div class="card bg-white p-6 text-center">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-store text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chef de projet</h3>
+                    <p>Pilotage de projets, coordination d'équipes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-[#faf7f2]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Témoignages d'anciens élèves</h2>
+                <p class="max-w-2xl mx-auto text-lg">Ce que nos diplômés disent de leur formation</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card bg-white p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Étudiant" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Jean Rakoto</h3>
+                            <p class="text-sm text-gray-600">Comptable chez FinancesPro</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-700">
+                        "La formation en gestion à Faneva m'a donné toutes les compétences nécessaires pour exceller 
+                        dans le monde professionnel. Les enseignants sont accessibles et les cours très pratiques."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="card bg-white p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Étudiante" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Sophie Randria</h3>
+                            <p class="text-sm text-gray-600">Responsable RH à EntreprisePlus</p>
+                        </div>
+                    </div>
+                    <p class="italic text-gray-700">
+                        "Le programme est très complet et m'a permis d'acquérir une vision globale des fonctions 
+                        de l'entreprise. Le stage en fin de cursus a été déterminant pour mon insertion professionnelle."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-[#5c4033] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à rejoindre notre formation en Gestion ?</h2>
+                <p class="text-xl mb-10">Inscrivez-vous dès aujourd'hui pour la prochaine rentrée scolaire</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-[#f8d3a9] text-[#5c4033] font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:bg-[#f5c28a] inline-block">
+                        Demander une brochure
+                    </a>
+                    <a href="#" class="bg-white text-[#5c4033] font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:bg-gray-100 inline-block">
+                        Postuler maintenant
+                    </a>
+                </div>
+                <p class="mt-8 text-beige-200">Ou contactez-nous au +261 XX XX XXX XX</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#472110] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Institution Faneva Ankadindramamy</h3>
+                    <p>Excellence éducative depuis 2019. Formation professionnelle de qualité.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Accueil</a></li>
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Formations</a></li>
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Admissions</a></li>
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Nos filières</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Gestion</a></li>
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Mécanique</a></li>
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">Électronique</a></li>
+                        <li><a href="#" class="hover:text-beige-200 transition-colors">BTP</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <address class="not-italic">
+                        <p class="mb-2">Lot II J 101 Bis Ankadindramamy</p>
+                        <p class="mb-2">Téléphone: +261 XX XX XXX XX</p>
+                        <p class="mb-2">Email: contact@faneva-ankadindramamy.edu</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-[#5c4033] mt-12 pt-8 text-center">
+                <p>&copy; 2023 Institution Faneva Ankadindramamy - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile (simplifié)
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            if (nav.classList.contains('hidden')) {
+                nav.classList.remove('hidden');
+                nav.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'right-4', 'bg-[#5c4033]', 'p-4', 'rounded-lg', 'shadow-lg');
+            } else {
+                nav.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
